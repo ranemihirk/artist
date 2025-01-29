@@ -14,10 +14,10 @@ import "./../styles/globals.css";
 // });
 
 export const metadata: Metadata = {
-  title: "Bill Distributor",
-  description: "Bill Distributor",
+  title: "Artist",
+  description: "Artist",
   icons: {
-    icon: "./assets/images/favicon.ico",
+    icon: "./assets/favicon.ico",
   },
 };
 
