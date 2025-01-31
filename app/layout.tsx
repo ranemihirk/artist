@@ -29,9 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head></head>
-      <body className=" antialiased p-4 lg:p-8 h-[100vh]">
-        <main>{children}</main>
-      </body>
+      <body className="container antialiased bg-main text-dark relative">{children}</body>
     </html>
   );
 }

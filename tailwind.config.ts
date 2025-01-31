@@ -8,6 +8,10 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    container: {
+      center: true,
+      padding: "1rem", // Default padding
+    },
     extend: {
       colors: {
         background: "var(--background)",
@@ -17,6 +21,7 @@ export default {
         light: colors.neutral[50],
 				dark: colors.zinc[900],
         gray: colors.gray[400],
+        main: "#FCF6F4",
       },
     },
   },

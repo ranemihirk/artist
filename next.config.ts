@@ -1,3 +1,4 @@
+import type { NextConfig } from "next";
 import dotenv from "dotenv";
 
 // Load environment variables from .env.local (or .env)
@@ -7,7 +8,8 @@ const withBundleAnalyzer = require("@next/bundle-analyzer")({
   enabled: process.env.ANALYZE === "true",
 });
 
-module.exports = withBundleAnalyzer({
+const nextConfig: NextConfig = withBundleAnalyzer({
+  
   reactStrictMode: true,
   typescript: {
     // !! WARN !!
@@ -20,3 +22,5 @@ module.exports = withBundleAnalyzer({
     styledComponents: true,
   },
 });
+
+export default nextConfig;
